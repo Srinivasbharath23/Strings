@@ -1,0 +1,8 @@
+s=input()
+A=input()
+B=input()
+c=0
+for i in range(len(s)):
+    if(s[i]==A and s[i+1]==B):
+        c+=1
+print(c)
