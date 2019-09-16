@@ -1,0 +1,6 @@
+s1=input()
+s2=input()
+l=[s1,s2]
+l.sort()
+for c in l:
+    print(c,end='')
