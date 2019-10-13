@@ -1,0 +1,9 @@
+import re
+words=input().strip().split(' ')
+articles=['a','an','the']
+c=0
+for w in words:
+    currword="".join(re.findall("[a-zA-z]+",w))
+    if currword.lower() in articles:
+        c+=1
+print(c)
