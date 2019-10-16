@@ -1,0 +1,15 @@
+words=input().split(' ')
+w1=input()
+w2=input()
+mindist=len(words)+1
+for i in range(len(words)):
+    if(words[i]==w1):
+        for j in range(len(words)):
+            if(words[j]==w2):
+                cudist=abs(i-j)
+                if cudist<mindist:
+                    mindist=cudist
+if mindist>0:
+    print(mindist)
+else:
+    print(1)
