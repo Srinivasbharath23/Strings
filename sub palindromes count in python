@@ -1,0 +1,8 @@
+s=input()
+c=0
+for i in range(0,len(s)-1):
+    for j in range(i+2,len(s)+1):
+        ss=s[i:j]
+        if ss==ss[::-1]:
+            c+=1
+print(c)
