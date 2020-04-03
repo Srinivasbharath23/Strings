@@ -1,9 +1,0 @@
-s=input()
-s2=''
-for c in s:
-    if(c=='a'):
-        c='1'
-    elif(c=='b'):
-        c='0'
-    s2+=c
-print(int(s2,2))
