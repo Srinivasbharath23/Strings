@@ -1,9 +1,0 @@
-import re
-s=input()
-re=re.findall(r"\d+|[a-zA-Z]",s)
-c=0
-for i in re:
-    if(i.isalpha()):
-        print(i*c,end='')
-    else:
-        c=int(i)
