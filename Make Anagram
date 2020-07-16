@@ -1,10 +1,8 @@
-n=int(input())
-for _ in range(n):
-    s1=list(input())
-    s2=list(input())
-    d=0
-    m=len(s1)+len(s2)
-    l1=set(s1).intersection(set(s2))
-    for i in l1:
-        d=d+min(s1.count(i),s2.count(i))
-    print(m-2*d)
+t = int(input())
+for i in range(t):
+    a = input()
+    b = input()
+    c = 0
+    for i in range(97,123):
+        c = c+abs(a.count(chr(i))-b.count(chr(i)))
+    print(c)
