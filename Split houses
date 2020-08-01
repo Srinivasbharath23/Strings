@@ -1,0 +1,8 @@
+n=int(input())
+s=input()
+t=s.replace('.','B')
+if 'HH' in t:
+    print('NO')
+else:
+    print('YES')
+    print(t)
